@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: christojohnsnoteworxreact 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: christojohnsnoteworxreact
+  template:
+    metadata:
+      labels:
+        app: christojohnsnoteworxreact 
+    spec:
+      containers:
+        - name: christojohnsnoteworxreact 
+          image: myaksapp1997.azurecr.io/christojohnsnoteworxreact
+          ports:
+          - containerPort: 8000
